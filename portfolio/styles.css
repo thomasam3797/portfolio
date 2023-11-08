@@ -2,28 +2,46 @@ body{
     background-color: #ffffff;
     margin:0;
     color:#000000;
-    font-family: 'prompt';
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 header{
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: column-reverse;
-    align-items: left;
+    flex-direction:column-reverse;
+    align-items:left;
+}
+header>h1{
+    position:fixed;
+    top:2;
+    left: 30%;
+    width:100%;
+    z-index:auto;
 }
 header>img{
-    width:20%;
-    height:20%;
+    width: 20%;
+    height: 20%;
+}
+.logo{
+    position:fixed;
+    top:0;
+    height:100px;
+    width:90px;
 }
 nav>a{
-    color:#ffffff;
-    text-decoration: none;
+    color:#000000;
+    text-decoration:none;
     padding: 1rem 2rem;
-    font-weight: 900;
-    display: inline-block;
+    font-weight:900;
+    display: block;
+    margin:1rem 1rem 1rem 1rem;
+}
+a>.photographs{
+    font-size: large;
 }
 nav>a:hover{
-    color:#ffffff;
-    text-decoration: underline;
+    color:#504b4b;
+    text-decoration:underline;
 }
 section>h2{
     text-align: center;
@@ -34,9 +52,8 @@ section>h2{
 section{
     background-color: #ffffff;
 }
-
 .landscapes>h2{
-    background-image: url(images/Screen\ Shot\ 2023-10-31\ at\ 6.26.23\ PM.png);
+    background-image: url(images/land1.png);
 }
 .wildlife>h2{
     background-image: url(images/wildlife.png);
@@ -45,7 +62,7 @@ section{
     background-image: url(images/portraits.png);
 }
 section span{
-    position: absolute;
+    position:absolute;
     top: 15rem;
     font-size: 2rem;
     left:48%
@@ -54,7 +71,7 @@ section>h2{
     position:relative;
 }
 .accordion{
-    cursor: pointer;
+    cursor:pointer;
 }
 section span{
     transform:rotate(180deg);
@@ -65,7 +82,12 @@ span.rotate{
 section>h2{
     border-bottom:2rem solid #ffffff;
 }
-
+.gallery{
+    display:none;
+}
+.gallery.show{
+    display:block;
+}
 section>h2{
     padding:23rem 0;
     font-size:3rem;
@@ -81,6 +103,12 @@ nav{
     top:2rem;
     left:1%;
 }
-header>img{
-    
+h1{
+    font-family: 'Prompt', sans-serif;
+}
+p{
+    font-size: larger;
+}
+.info h1{
+text-align: center;
 }

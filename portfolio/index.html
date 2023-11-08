@@ -5,44 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.google.com/share?selection.family=Prompt:wght@300" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Prompt:wght@300;700&display=swap" rel="stylesheet">
+    
+   
 </head>
 <body>
     <header>
+        <img src="images/logo.png" id="logo" class="logo">
         <h1>Amber Thomas</h1>
-        <img src="images/headshot.png" alt="50">
-        <h2> Photographs</h2>
+        <img src="images/headshot.png" alt="headshot">
         <nav>
-            <h3>
-            <a href="landscapes"> Landscapes</a>
-            <a href="wildlife"> Wild Life</a>
-            <a href="subject&portrait"> Subject & Portrait</a>
-            <a href="about"> About</a>
+            <a href="index.html" class="photographs"> Photographs</a>
+            <a href="landscapes"> >Landscapes</a>
+            <a href="wildlife"> >Wild Life</a>
+            <a href="subject&portrait"> >Subject & Portrait</a>
+            <a href="about.html"> About</a>
             <a href="contact"> Contact</a>
-        </h3>
         </nav>
     </header>
     <main> 
-        <section class="about" id="about">
-            <h3> About</h3>
-            <div>
-                <p> 
-                    I am a Junior at the University of Wisconsin Eau Claire studying Graphic Communications. I am from Pewaukee Wi and have had a passion for photography for as long as I can remember. Post graduation I will be pursuing a career in graphic design doing product design for companies.  I took photos for the Spectator UWEC Newspaper for a couple of months my freshman year. From there I continued taking headshots and experimenting with creative photography. I love doing wildlife and landscape photography by recently have been working on human subjects.
-                </p>
+        <section class=landscapes id=landscapes>
+            <h2 class="accordion"> Landscapes <span>^</span></h2>
+            <div class="gallery">
+            <img src="images/Landscape.png">
+            <img src="images/land2.png">
+            <img src="images/land3.png">
             </div>
         </section>
-        <section class=landscapes id=landscapes>
-            <h2 class="acordion"> Landscapes <span>^</span></h2>
-            <img src="images/landscape images.png">
-        </section>
         <section class="wildlife" id="wildlife">
-            <h2 class="acordion"> Wildlife <span>^</span></h2>
-            <img src="images/animal images.png">
+            <h2 class="accordion"> Wildlife <span>^</span></h2>
+            <div class="gallery">
+            <img src="images/bear1.png">
+            <img src="images/bear2.png">
+            <img src="images/bison.png">
+            <img src="images/horse.png">
+            <img src="images/horse2.png">
+            </div>
         </section>
         <section class="subjectportrait" id="subjectportrait">
-            <h2 class="acordion"> Subject & Portrait <span>^</span></h2>
-            <img src="images/portrait images.png">
+            <h2 class="accordion"> Subject & Portrait <span>^</span></h2>
+            <div class="gallery">
+            <img src="images/Headshot1.png">
+            <img src="images/Headshot2.png">
+            <img src="images/Headshot3.png">
+            </div>
         </section>
     </main>
+    <div class="info">
+    <h1> Want to Reach Me?</h1>
+    <h2> Contact</h2>
+    <h3> email:amthomas823@gmail.com</h3>
+    <h3>phone:(262)-349-6813</h3>
+    </div>
 </body>
 </html>

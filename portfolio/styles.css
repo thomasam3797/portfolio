@@ -10,6 +10,10 @@ header{
     flex-direction: column-reverse;
     align-items: left;
 }
+header>img{
+    width:20%;
+    height:20%;
+}
 nav>a{
     color:#ffffff;
     text-decoration: none;

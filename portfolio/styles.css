@@ -108,12 +108,14 @@ p{
     top:25rem;
 }
 form{
-    background-color: #92b688;
-    padding: 2rem;
-    text-align: center;
-    font-family: 'Montserrat';
     position:absolute;
-    top: 45rem;
+    top:45rem;
+    background-color: #000000;
+    width:104%;
+    padding:2rem;
+    text-align:center;
+    font-family:'Montserrat';
+    color:white;
 }
 form>label{
     display:block;
@@ -131,15 +133,19 @@ section>h3{
 br{
     padding:2rem;
 }
+main{
+    margin-top:8rem;
+}
 img{
     width:15rem;
     margin:1rem;
     margin-left:7rem;
 }
-main{
-    margin-top:8rem;
-}
-@media (min-width:455){
+@media (min-width: 455px) {
+    .pics {
+        width: 50rem;
+        margin-left:18rem;
+    }
     nav{
         position:absolute;
         top:6rem;
@@ -147,20 +153,15 @@ main{
         font-size: large;
     }
     .info{
-        position:absolute;
-        top:38rem;
-        padding:2rem;
         background-color: rgb(218, 218, 199);
-        width:100%;
         text-align: center;
-        font-size: larger;
-        color:white;
+        width:100%;
     }
     form{
-        position:absolute;
-        bottom:0rem;
+        background-color:#000000;
+        text-align: center;
         width:100%;
-        display:inline;
+        color:white;  
     }
     header>img{
         width:7rem;
@@ -181,11 +182,6 @@ main{
     }
     main{
         margin-top:18rem;
-    }
-    img{
-        width:50rem;
-        margin:3rem;
-        margin-left:20rem;
     }
     .about>h3{
         position:absolute;

@@ -8,24 +8,25 @@ body{
 header{
     background-color: rgb(255, 255, 255);
     display:flex;
-    flex-direction:column-reverse;
+    flex-direction:column;
     align-items:left;
 }
-header>img{
+header img{
     width:5rem;
     height: 20%;
-    margin-top: 8rem;
     margin-left: 1rem;
+    margin-right:1rem;
+    margin-top:-2rem;
+    vertical-align: middle;
 }
-header>h1{
-    width:100%;
+header h1{
     text-align: left;
+    vertical-align:middle;
+    margin-top:-3rem;
 }
 .logo{
     height:100px;
     width:90px;
-    position:absolute;
-    top:-7rem;
 }
 nav>a{
     color:#000000;
@@ -81,16 +82,13 @@ span.rotate{
     display:block;
 }
 nav{
-    position:absolute;
-    top:15rem;
-    left:1.5rem;
     font-size: larger;
+    margin-left:1rem;
+    margin-bottom:0rem;
 }
 header h1{
     font-family: 'Prompt', sans-serif;
-    position:absolute;
-    top:8rem;
-    left:6rem;
+    display:inline-block;
 }
 p{
     font-size: larger;
@@ -100,8 +98,10 @@ p{
 }
 .info{
     position:absolute;
-    left:1.5rem;
-    top:30rem;
+    top:35.5rem;
+    background-color:rgb(218, 218, 199);
+    width:100%;
+    text-align: center;
 }
 .about>h3{
     position:absolute;
@@ -119,10 +119,6 @@ form>label{
     display:block;
     width:25rem;
 }
-.home{
-    position:absolute;
-    top:7rem;
-}
 nav .gallery{
     position:absolute;
     top:26rem;
@@ -136,14 +132,14 @@ br{
     padding:2rem;
 }
 img{
-    width: 29rem;
+    width:25rem;
+    margin:3rem;
+    margin-left:1rem;
+}
+main{
+    margin-top:8rem;
 }
 @media (min-width:455px){
-    header h1{
-        position:absolute;
-        top:2rem;
-        left:15rem;
-    }
     nav{
         position:absolute;
         top:6rem;
@@ -151,11 +147,16 @@ img{
     }
     .info{
         position:absolute;
-        top:45rem;
+        top:38rem;
+        padding:2rem;
+        background-color: rgb(218, 218, 199);
+        width:100%;
+        text-align: center;
+        font-size: larger;
     }
     form{
         position:absolute;
-        top:60rem;
+        top:53rem;
         width:97%;
         display:flex;
     }
@@ -178,5 +179,18 @@ img{
     }
     main{
         margin-top:18rem;
+    }
+    img{
+        width:50rem;
+        margin:3rem;
+        margin-left:35rem;
+    }
+    .about>h3{
+        position:absolute;
+        top:18rem;
+    }
+    p{
+        position:absolute;
+        top:22rem;
     }
 }
